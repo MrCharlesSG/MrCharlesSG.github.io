@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>CSG</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
-<body>
+<body class=" w-100">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Mi Logo</a>
+            <a class="navbar-brand" href="#">CSG</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto" id="nav-links">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
@@ -27,18 +28,18 @@
         </div>
     </nav>
     
-    <section id="home" class="section">
+    <section id="home" class="section section-in">
         <div id="particles-js"></div>
         <div class="container text-center content">
-            <h1 class="mb-4">Sobre Mí</h1>
+            <h1 class="mb-4">Carlos<br> Serrano Gutiérrez</h1>
             <p class="mb-4">Soy un desarrollador apasionado por crear soluciones innovadoras y eficientes.</p>
-            <a href="#" download class="btn btn-primary btn-lg">Descargar CV</a>
+            <a href="/assets/CV_Carlos_Serrano_Gutierrez.pdf" download class="btn btn-primary btn-lg">Download Resume</a>
         </div>
     </section>
     
     <!-- ABOUT -->
 
-    <section id="about">
+    <section id="about" class="section-in">
         <div class="about-content section">
             <h2>About</h2>
             <div class="about-buttons">
@@ -48,152 +49,52 @@
                 <button class="about-btn" data-target="experience">Experience</button>
             </div>
             <div class="about-info">
-                    <div id="about-me" class="detail-content active">
-                        <img src="path/to/your/logo.png" alt="Mi Logo" class="about-logo">
-                        <h3>Tu Nombre Completo</h3>
-                        <h4>Desarrollador Web Full Stack</h4>
-                        <p>Aquí va una descripción más larga sobre ti, tus pasiones, tus objetivos profesionales, etc.</p>
+                <div id="about-me" class="detail-content active text-center">
+                    <!-- This will be filled dynamically -->
+                </div>
+                <div id="skills" class="detail-content">
+                    <div class="skills-container">
+                        <!-- This will be filled dynamically -->
                     </div>
-                    <div id="skills" class="detail-content">
-                        <div class="skill">
-                            <span>HTML/CSS</span>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%">90%</div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <span>JavaScript</span>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%">85%</div>
-                            </div>
-                        </div>
+                </div>
+                <div id="education" class="detail-content">
+                    <div class="timeline">
+                        <!-- This will be filled dynamically -->
                     </div>
-                    <div id="education" class="detail-content">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <h5>2020 - 2022</h5>
-                                <h6>Máster en Desarrollo Web</h6>
-                                <p>Universidad XYZ</p>
-                            </div>
-                            <div class="timeline-item">
-                                <h5>2016 - 2020</h5>
-                                <h6>Grado en Ingeniería Informática</h6>
-                                <p>Universidad ABC</p>
-                            </div>
-                        </div>
+                </div>
+                <div id="experience" class="detail-content">
+                    <div class="timeline">
+                        <!-- This will be filled dynamically -->
                     </div>
-                    <div id="experience" class="detail-content">
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <h5>2022 - Presente</h5>
-                                <h6>Desarrollador Full Stack Senior</h6>
-                                <p>Empresa XYZ</p>
-                            </div>
-                            <div class="timeline-item">
-                                <h5>2020 - 2022</h5>
-                                <h6>Desarrollador Front-end</h6>
-                                <p>Empresa ABC</p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
         <div class="quote-section section">
-            <blockquote>
-                "Aquí va tu cita inspiradora."
-                <footer>— Nombre del Autor</footer>
-            </blockquote>
+            <!-- This will be filled dynamically -->
         </div>
     </section>
 
     <!---->
-    <section id="projects" class="section">
+    <section id="projects" class="section section-in">
         <div class="container">
-            <h2 class="section-title">Mis Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="path/to/project1-image.jpg" alt="Proyecto 1" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Nombre del Proyecto 1</h3>
-                        <span class="project-category">Spring Boot</span>
-                        <p class="project-description">Descripción detallada del proyecto 1. Esta se mostrará al hacer hover sobre la tarjeta.</p>
-                    </div>
+            <h2 class="section-title text-warning">Mis Proyectos</h2>
+            <div class="projects-carousel">
+                <button class="carousel-button prev">&lt;</button>
+                <div class="projects-wrapper">
+                    <!-- Projects will be dynamically inserted here -->
                 </div>
-                <div class="project-card">
-                    <img src="path/to/project2-image.jpg" alt="Proyecto 2" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Nombre del Proyecto 2</h3>
-                        <span class="project-category">Computer Vision</span>
-                        <p class="project-description">Descripción detallada del proyecto 2. Esta se mostrará al hacer hover sobre la tarjeta.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="path/to/project3-image.jpg" alt="Proyecto 3" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Nombre del Proyecto 3</h3>
-                        <span class="project-category">Cryptography</span>
-                        <p class="project-description">Descripción detallada del proyecto 3. Esta se mostrará al hacer hover sobre la tarjeta.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="path/to/project4-image.jpg" alt="Proyecto 4" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Nombre del Proyecto 4</h3>
-                        <span class="project-category">Machine Learning</span>
-                        <p class="project-description">Descripción detallada del proyecto 4. Esta se mostrará al hacer hover sobre la tarjeta.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="path/to/project5-image.jpg" alt="Proyecto 5" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Nombre del Proyecto 5</h3>
-                        <span class="project-category">Web Development</span>
-                        <p class="project-description">Descripción detallada del proyecto 5. Esta se mostrará al hacer hover sobre la tarjeta.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="path/to/project6-image.jpg" alt="Proyecto 6" class="project-image">
-                    <div class="project-info">
-                        <h3 class="project-title">Nombre del Proyecto 6</h3>
-                        <span class="project-category">Mobile App</span>
-                        <p class="project-description">Descripción detallada del proyecto 6. Esta se mostrará al hacer hover sobre la tarjeta.</p>
-                    </div>
-                </div>
+                <button class="carousel-button next">&gt;</button>
             </div>
         </div>
     </section>
-    <section id="certifications" class="section">
+    <section id="certifications" class="section section-in">
         <div class="container">
-            <h2 class="section-title text-white">Mis Certificaciones</h2>
+            <h2 class="section-title">Mis Certificaciones</h2>
             <div class="certifications-list">
-                <div class="certification-item">
-                    <h3 class="certification-title">Certificación 1</h3>
-                    <p class="certification-description">Descripción detallada de la Certificación 1. Esta certificación demuestra habilidades en...</p>
-                </div>
-                <div class="certification-item">
-                    <h3 class="certification-title">Certificación 2</h3>
-                    <p class="certification-description">Descripción detallada de la Certificación 2. Esta certificación valida conocimientos en...</p>
-                </div>
-                <div class="certification-item">
-                    <h3 class="certification-title">Certificación 3</h3>
-                    <p class="certification-description">Descripción detallada de la Certificación 3. Esta certificación acredita experiencia en...</p>
-                </div>
-                <div class="certification-item">
-                    <h3 class="certification-title">Certificación 4</h3>
-                    <p class="certification-description">Descripción detallada de la Certificación 4. Esta certificación reconoce competencias en...</p>
-                </div>
-                <div class="certification-item">
-                    <h3 class="certification-title">Certificación 5</h3>
-                    <p class="certification-description">Descripción detallada de la Certificación 5. Esta certificación avala habilidades en...</p>
-                </div>
-                <div class="certification-item">
-                    <h3 class="certification-title">Certificación 6</h3>
-                    <p class="certification-description">Descripción detallada de la Certificación 6. Esta certificación certifica conocimientos en...</p>
-                </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="section">
+    <section id="contact" class="section section-in">
         <div id="particles-contact"></div>
         <div class="container">
             <h2 class="section-title">Contacto</h2>

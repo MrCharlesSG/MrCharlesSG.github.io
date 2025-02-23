@@ -6,6 +6,13 @@
     --primary-dark:#0092b8;
 }
 
+@font-face {
+    font-family: 'Audiowide';
+    src: url('assets/Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
 ::-webkit-scrollbar-track {
     background: var(--dark-navy);
@@ -94,7 +101,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/img/bg-1.jpeg');
+    background-image: url('assets/img/home.jpeg');
     background-size: cover;
     background-position: center;
     filter: brightness(0.6);
@@ -153,7 +160,7 @@ p {
 #about {
     display: flex;
     flex-direction: column;
-    background-image: url('assets/img/bg-5.jpeg');
+    background-image: url('assets/img/quote.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

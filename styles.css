@@ -54,8 +54,14 @@ body {
     color: var(--dark-navy);
 }
 
+@media (max-width: 768px) {
+    .title{
+        font-size: 3rem;
+    }
+}
+
 .title{
-    font-size: 70px;
+    font-size: 4rem;
 }
 
 .nav-link{

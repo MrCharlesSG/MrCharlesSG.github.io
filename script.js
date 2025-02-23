@@ -129,9 +129,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const aboutMe = document.getElementById('about-me');
             aboutMe.innerHTML = `
                 <img src="${data.about.image}" alt="${data.about.name}" class="about-profile-pic">
-                <h2>${data.about.name}</h2>
-                <h4>${data.about.title}</h4>
-                <p>${data.about.description}</p>
+                <h2 class="text-primary">${data.about.name}</h2>
+                <h4 class="text-primary">${data.about.title}</h4>
+                <p class="dark-text">${data.about.description}</p>
             `;
 
             // Fill Skills section
@@ -165,9 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
             data.education.forEach(edu => {
                 educationTimeline.innerHTML += `
                     <div class="timeline-item">
-                        <h5>${edu.period}</h5>
-                        <h6>${edu.title}</h6>
-                        <p>${edu.institution}</p>
+                        <h5 class="text-primary">${edu.period}</h5>
+                        <h6 class="text-primary">${edu.title}</h6>
+                        <p class="text-primary">${edu.institution}</p>
                     </div>
                 `;
             });
@@ -177,9 +177,9 @@ document.addEventListener("DOMContentLoaded", function () {
             data.experience.forEach(exp => {
                 experienceTimeline.innerHTML += `
                     <div class="timeline-item">
-                        <h5>${exp.period}</h5>
-                        <h6>${exp.title}</h6>
-                        <p>${exp.company}</p>
+                        <h5 class="text-primary">${exp.period}</h5>
+                        <h6 class="text-primary">${exp.title}</h6>
+                        <p class="text-primary">${exp.company}</p>
                     </div>
                 `;
             });

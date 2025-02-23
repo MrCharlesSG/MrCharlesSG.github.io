@@ -40,42 +40,42 @@
   
     "about": {
       "name": "Carlos Serrano Gutiérrez",
-      "title": "Desarrollador Web Full Stack",
-      "description": "Aquí va una descripción más larga sobre ti, tus pasiones, tus objetivos profesionales, etc.",
+      "title": "Cybersecurity & Business Integrator",
+      "description": "I am a business-driven software engineer with a strong focus on cybersecurity. My open-minded approach allows me to adapt to diverse enviroments, while my discipline ensures excellence in every project. Passionate about innovation, I focus on connect technology with business to create real solutions",
       "image": "assets/personal-foto.jpeg"
     },
     "skills": [
       {
-        "name": "HTML/CSS",
+        "name": "Computer Vision",
+        "percentage": 78
+      },
+      {
+        "name": "Spring Boot",
         "percentage": 90
       },
       {
-        "name": "JavaScript",
-        "percentage": 85
-      },
-      {
-        "name": "React",
-        "percentage": 80
-      },
-      {
-        "name": "Node.js",
-        "percentage": 75
-      },
-      {
         "name": "Python",
-        "percentage": 70
-      },
-      {
-        "name": "SQL",
-        "percentage": 85
-      },
-      {
-        "name": "Git",
         "percentage": 80
       },
       {
-        "name": "Docker",
-        "percentage": 65
+        "name": "Cryptography",
+        "percentage": 74
+      },
+      {
+        "name": "Business Understanding",
+        "percentage": 82
+      },
+      {
+        "name": "Open Minded",
+        "percentage": 90
+      },
+      {
+        "name": "Discipline",
+        "percentage": 97
+      },
+      {
+        "name": "Motivation",
+        "percentage": 100
       }
     ],
     "education": [
@@ -103,8 +103,8 @@
       }
     ],
     "quote": {
-      "text": "Aquí va tu cita inspiradora.",
-      "author": "Nombre del Autor"
+      "text": "Acknowledging your weaknesses is not the same as surrendering to them.",
+      "author": "Ray Dalio"
     },
   
     "certifications": [

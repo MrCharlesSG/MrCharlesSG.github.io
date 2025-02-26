@@ -53,6 +53,10 @@ body {
     background-color: var(--dark-navy) !important;
 }
 
+.navbar.show {
+    background-color: var(--dark-navy) !important;
+}
+
 
 
 

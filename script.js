@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".section-in");
     const navLinks = document.querySelectorAll("#nav-links .nav-link");
     const navbar = document.querySelector(".navbar");
-
+    const navbarCollapse = document.querySelector('.navbar-collapse');
 
     particlesJS('particles-js', {
         particles: {
@@ -64,6 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    navbarCollapse.addEventListener('show.bs.collapse', function () {
+        navbar.classList.add('show');
+    });
+
+    navbarCollapse.addEventListener('hide.bs.collapse', function () {
+        navbar.classList.remove('show');
+    });
 
     const aboutButtons = document.querySelectorAll('.about-btn');
     const detailContents = document.querySelectorAll('.detail-content');

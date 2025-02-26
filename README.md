@@ -1,8 +1,17 @@
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
-- [Portfolio Customization Guide](#portfolio-customization-guide)
-   * [Table of Contents](#table-of-contents)
-   * [1. Project Structure Overview](#1-project-structure-overview)
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="portfolio-customization-guide"></a>
+# Portfolio Customization Guide
+
+Welcome to the Portfolio Customization Guide! This step-by-step tutorial will help you personalize your portfolio website. Whether you want to change your content, images, colors, or fonts, this guide will walk you through everything you need to make the website uniquely yours.
+
+<!-- TOC --><a name="table-of-contents"></a>
+## Table of Contents
+
+[1. Project Structure Overview](#1-project-structure-overview)
       + [Key Files:](#key-files)
       + [Folder Breakdown:](#folder-breakdown)
    * [2. Step-by-Step Implementation](#2-step-by-step-implementation)
@@ -24,25 +33,6 @@
       + [Particle Animation:](#particle-animation)
       + [Adding New Functionality:](#adding-new-functionality)
    * [8. Removing Sections You Don’t Need](#8-removing-sections-you-dont-need)
-
-<!-- TOC end -->
-
-<!-- TOC --><a name="portfolio-customization-guide"></a>
-# Portfolio Customization Guide
-
-Welcome to the Portfolio Customization Guide! This step-by-step tutorial will help you personalize your portfolio website. Whether you want to change your content, images, colors, or fonts, this guide will walk you through everything you need to make the website uniquely yours.
-
-<!-- TOC --><a name="table-of-contents"></a>
-## Table of Contents
-
-1. Project Structure Overview
-2. Step-by-Step Implementation
-3. Customizing Page Information
-4. Customizing Content (Text)
-5. Changing Style and Colors
-6. Replacing Images
-7. Modifying Scripts and Animations
-8. Removing Sections You Don’t Need
 
 ---
 

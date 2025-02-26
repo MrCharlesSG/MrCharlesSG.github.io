@@ -11,9 +11,7 @@ Welcome to the Portfolio Customization Guide! This step-by-step tutorial will he
 <!-- TOC --><a name="table-of-contents"></a>
 ## Table of Contents
 
-[1. Project Structure Overview](#1-project-structure-overview)
-      + [Key Files:](#key-files)
-      + [Folder Breakdown:](#folder-breakdown)
+   * [1. Project Structure Overview](#1-project-structure-overview)
    * [2. Step-by-Step Implementation](#2-step-by-step-implementation)
    * [3. Customizing Page Information](#3-customizing-page-information)
       + [1. Change the Page Title and Navbar:](#1-change-the-page-title-and-navbar)

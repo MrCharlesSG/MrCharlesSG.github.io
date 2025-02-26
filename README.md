@@ -232,12 +232,8 @@ Here are some color palette suggestions:
 }
 ```
 
-<aside>
-<img src="/icons/light-bulb_green.svg" alt="/icons/light-bulb_green.svg" width="40px" />
-
 Be aware that dark-navy refers to navbar an filter for the images, primary is the accent color, and the bg-light is the contrary of dark-navy
 
-</aside>
 
 ### Fonts:
 

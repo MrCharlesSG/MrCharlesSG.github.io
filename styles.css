@@ -2,10 +2,13 @@
     --dark-navy: rgb(36, 42, 53); 
     --darker-navy: rgb(21, 23, 28); 
     --bg-light:#f8f9fa;
-    --primary:rgb(0, 210, 242);
-    --primary-dark:#0092b8;
+    --primary:rgb(229, 56, 137);
+    --primary-dark:#AC1754;
 }
-
+/*
+rgb(0, 210, 242)
+#0092b8
+*/
 @font-face {
     font-family: 'Audiowide';
     src: url('assets/Audiowide/Audiowide-Regular.ttf') format('truetype');
@@ -42,13 +45,16 @@ body {
 }
 
 .navbar {
+    background-color: transparent !important;
     transition: background-color 0.3s ease;
-    z-index: 1000;
 }
 
 .navbar.scrolled {
     background-color: var(--dark-navy) !important;
 }
+
+
+
 
 .btn-primary {
     color: var(--dark-navy);
@@ -68,21 +74,7 @@ body {
     font-size: large;
 }
 
-.progress {
-    height: 20px;
-    background-color: var(--dark-navy);
-    border-radius: 10px;
-    overflow: hidden;
-}
 
-.progress-bar {
-    height: 100%;
-    background-color: var(--primary);
-    text-align: right;
-    padding-right: 5px;
-    line-height: 20px;
-    color: var(--dark-navy);
-}
 
 .section {
     min-height: 100vh;
@@ -96,8 +88,8 @@ body {
 #home {
     position: relative;
     overflow: hidden;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,200.8);
+    color: var(--bg-light);
+    text-shadow: 2px 2px 4px rgba(36, 42, 53, 0.8);
 }
 
 #home::before {
@@ -107,12 +99,24 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/img/home.jpeg');
+    background-image: url('assets/img/home.jpg');
     background-size: cover;
     background-position: center;
-    filter: brightness(0.6);
+    background-attachment: fixed;
     z-index: -2;
 }
+
+#home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 42, 53, 0.7); /* Filtro de color */
+    z-index: -1;
+}
+
 
 #particles-js {
     position: absolute;
@@ -166,7 +170,7 @@ p {
 #about {
     display: flex;
     flex-direction: column;
-    background-image: url('assets/img/quote.jpeg');
+    background-image: url('assets/img/quote.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -203,6 +207,10 @@ p {
     color: var(--dark-navy);
 }
 
+.light-text{
+    color: var(--bg-light);
+}
+
 .about-info {
     width: 100%;
     max-width: 800px;
@@ -218,7 +226,6 @@ p {
     width: 100%;
     background-color: var(--dark-navy);
     padding: 10px 0;
-    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -230,7 +237,7 @@ p {
     cursor: pointer;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
-    color: #fff;
+    color: var(--bg-light);
     flex-grow: 1;
     text-align: center;
     border-right: 1px solid rgba(36, 42, 53, 0.2);
@@ -269,8 +276,8 @@ p {
 .progress {
     height: 20px;
     background-color: var(--dark-navy);
-    border-radius: 10px;
     overflow: hidden;
+    border-radius: 2%;
 }
 
 .progress-bar {
@@ -301,7 +308,7 @@ p {
 }
 
 .about-btn:hover {
-    background-color: rgba(0, 210, 242, 0.2);
+    background-color: rgba(229, 56, 137, 0.2);
 }
 
 .detail-content {
@@ -316,7 +323,7 @@ p {
 .quote-section {
     padding: 4rem 2rem;
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     text-shadow: 2px 2px 4px rgba(36, 42, 53,1);
     position: relative;
 }
@@ -332,9 +339,14 @@ p {
     z-index: 1;
 }
 
-.quote-section blockquote {
+.quote-section h1 {
     position: relative;
     z-index: 2;
+}
+.quote-section h3 {
+    position: relative;
+    z-index: 2;
+    color: var(--primary);
 }
 
 .timeline {
@@ -371,7 +383,7 @@ p {
 .quote-section {
     padding: 4rem 2rem;
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     text-shadow: 2px 2px 4px rgba(36, 42, 53,0.5);
 }
 
@@ -393,7 +405,7 @@ blockquote footer {
 /* Projects Section */
 #projects {
     background-color: var(--dark-navy);
-    color: #fff;
+    color: var(--bg-light);
     padding: 4rem 0;
     overflow: hidden;
 }
@@ -415,7 +427,7 @@ blockquote footer {
     flex: 0 0 300px;
     height: 400px;
     margin-right: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(36, 42, 53, 0.1);
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -494,16 +506,6 @@ blockquote footer {
     opacity: 1;
 }
 
-.project-description {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-}
-
 .project-link {
     color: var(--primary);
     text-decoration: none;
@@ -511,9 +513,9 @@ blockquote footer {
 }
 
 .carousel-button {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(36, 42, 53, 0.3);
     border: none;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2rem;
     padding: 1rem;
     cursor: pointer;
@@ -560,7 +562,7 @@ blockquote footer {
 
 .certification-item {
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: var(--bg-light)fff;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -597,7 +599,7 @@ blockquote footer {
 /* Contact Section */
 #contact {
     background-color: var(--dark-navy);
-    color: #fff;
+    color: var(--bg-light);
     padding: 4rem 0;
     position: relative;
     overflow: hidden;
@@ -618,7 +620,7 @@ blockquote footer {
 }
 
 #contact .section-title {
-    color: #fff;
+    color: var(--bg-light);
 }
 
 .social-icons {
@@ -636,5 +638,5 @@ blockquote footer {
 
 .social-icon:hover {
     transform: scale(1.2);
-    color: #fff;
+    color: var(--bg-light);
 }

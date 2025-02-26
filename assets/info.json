@@ -40,8 +40,8 @@
   
     "about": {
       "name": "Carlos Serrano Gutiérrez",
-      "title": "Cybersecurity & Business Integrator",
-      "description": "I am a business-driven software engineer with a strong focus on cybersecurity. My open-minded approach allows me to adapt to diverse enviroments, while my discipline ensures excellence in every project. Passionate about innovation, I focus on connect technology with business to create real solutions",
+      "title": "Cybersecurity & Business-Minded Engineer",
+      "description": "I'm a software engineer with a strong focus on cybersecurity and a genuine interest in how technology shapes business decisions. I like finding practical ways to connect both worlds, always prioritizing open-mindedness, transparency, and discipline to make better decisions and adapt to new challenges.",
       "image": "assets/img/personal-foto.jpeg"
     },
     "skills": [
@@ -62,11 +62,11 @@
         "percentage": 74
       },
       {
-        "name": "Business Understanding",
+        "name": "Strategic Thinking",
         "percentage": 82
       },
       {
-        "name": "Open Minded",
+        "name": "Decision Making",
         "percentage": 90
       },
       {
@@ -104,8 +104,14 @@
     ],
     "quote": {
       "text": "Acknowledging your weaknesses is not the same as surrendering to them.",
-      "author": "Ray Dalio"
+      "author": "Ray Dalio",
+      "image":"assets/img/quote.jpg"
     },
+    "home": {
+      "name": "Carlos<br>Serrano Gutiérrez",
+      "subtitle": "Driven by <em class='text-primary-light'>cybersecurity</em>, <em class='text-primary-light'>business</em> strategy, and a commitment to continuous growth and <em class='text-primary-light'>discipline</em>.",
+      "resume": "/assets/CV_Carlos_Serrano_Gutierrez.pdf"
+  },
   
     "certifications": [
   {

@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     particlesJS('particles-js', {
         particles: {
             number: { value: 100, density: { enable: true, value_area: 800 } },
-            color: { value: "#00d3f2" },
+            color: { value: "#e53889" },
             shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5,  } },
             opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
             size: { value: 7, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
-            line_linked: { enable: true, distance: 150, color: "#00d3f2", opacity: 0.4, width: 1 },
+            line_linked: { enable: true, distance: 150, color: "#e53889", opacity: 0.4, width: 1 },
             move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
         },
         interactivity: {
@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
     particlesJS('particles-contact', {
         particles: {
             number: { value: 100, density: { enable: true, value_area: 800 } },
-            color: { value: "#00d3f2" },
+            color: { value: "#e53889" },
             shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5,  } },
             opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
             size: { value: 7, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
-            line_linked: { enable: true, distance: 150, color: "#00d3f2", opacity: 0.4, width: 1 },
+            line_linked: { enable: true, distance: 150, color: "#e53889", opacity: 0.4, width: 1 },
             move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } }
         },
         interactivity: {
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
 
     const aboutButtons = document.querySelectorAll('.about-btn');
     const detailContents = document.querySelectorAll('.detail-content');
@@ -121,6 +122,20 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: 'smooth'
         });
     });
+
+    fetch('assets/info.json')
+    .then(response => response.json())
+    .then(data => {
+        // Insertar contenido en Home
+        const homeContent = document.getElementById('home-content');
+        homeContent.innerHTML = `
+            <h1 class="mb-4 title">${data.home.name}</h1>
+            <h4 class="mb-4">${data.home.subtitle}</h4>
+            <a href="${data.home.resume}" download class="btn btn-primary btn-lg">Download Resume</a>
+        `;
+    })
+    .catch(error => console.error('Error loading home content:', error));
+
 
     fetch('assets/info.json')
         .then(response => response.json())
@@ -187,11 +202,12 @@ document.addEventListener("DOMContentLoaded", function () {
             // Fill Quote section
             const quoteSection = document.querySelector('.quote-section');
             quoteSection.innerHTML = `
-                <blockquote>
-                    "${data.quote.text}"
-                    <footer>— ${data.quote.author}</footer>
+                <blockquote class="quote-container">
+                    <h1 class="">${data.quote.text}</h1>
+                    <h3 class="">— ${data.quote.author}</h3>
                 </blockquote>
             `;
+
         })
         .catch(error => console.error('Error loading info:', error));
 

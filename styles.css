@@ -93,7 +93,6 @@ body {
     position: relative;
     overflow: hidden;
     color: var(--bg-light);
-    text-shadow: 2px 2px 4px rgba(36, 42, 53, 0.8);
 }
 
 #home::before {
@@ -146,17 +145,19 @@ body {
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
-    color: #000;
+    color: var(--dark-navy);
     font-size: 1rem;
     padding: 10px 20px;
     border-radius: 0% !important;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .btn-primary:hover {
     background-color: var(--primary);
     border-color: var(--primary);
-    color: #000;
+    color: var(--dark-navy);
+    font-weight:bolder;
 }
 
 h1 {
@@ -181,6 +182,8 @@ p {
     position: relative;
 }
 
+
+
 .about-profile-pic {
     width: 150px;  /* Adjust this value to make the image smaller or larger */
     height: 150px; /* Keep it the same as the width to maintain a perfect circle */
@@ -201,6 +204,7 @@ p {
     background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .bg-primary{

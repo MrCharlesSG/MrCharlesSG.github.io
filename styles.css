@@ -4,6 +4,9 @@
     --bg-light:#f8f9fa;
     --primary:rgb(229, 56, 137);
     --primary-dark:#AC1754;
+    --dark-navy-trasparent: rgba(36, 42, 53, 0.7);
+    --dark-navy-little-trasparent: rgba(36, 42, 53, 0.2);
+    --primary-trasparent: rgba(229, 56, 137, 0.4);
 }
 /*
 rgb(0, 210, 242)
@@ -46,7 +49,7 @@ body {
 
 .navbar {
     background-color: transparent !important;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 .navbar.scrolled {
@@ -116,7 +119,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 42, 53, 0.7); /* Filtro de color */
+    background-color: var(--dark-navy-trasparent); /* Filtro de color */
     z-index: -1;
 }
 
@@ -190,7 +193,6 @@ p {
     border-radius: 50%; /* This makes the image circular */
     object-fit: cover; /* This ensures the image covers the area without stretching */
     border: 3px solid var(--primary-dark); /* This adds a golden border. Adjust color as needed */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* This adds a subtle shadow */
     margin-bottom: 1rem; /* This adds some space below the image */
     transition: transform 0.3s ease; /* This adds a smooth transition for the hover effect */
 }
@@ -248,7 +250,7 @@ p {
     color: var(--bg-light);
     flex-grow: 1;
     text-align: center;
-    border-right: 1px solid rgba(36, 42, 53, 0.2);
+    border-right: 1px solid var(--dark-navy-trasparent);
 }
 
 /* Existing styles remain the same */
@@ -316,7 +318,7 @@ p {
 }
 
 .about-btn:hover {
-    background-color: rgba(229, 56, 137, 0.2);
+    background-color: var(--primary-trasparent);
 }
 
 .detail-content {
@@ -332,7 +334,7 @@ p {
     padding: 4rem 2rem;
     text-align: center;
     color: var(--bg-light);
-    text-shadow: 2px 2px 4px rgba(36, 42, 53,1);
+    text-shadow: 2px 2px 4px var(--dark-navy-trasparent);
     position: relative;
 }
 
@@ -343,7 +345,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(36, 42, 53, 0.8);  
+    background-color: var(--dark-navy-trasparent);  
     z-index: 1;
 }
 
@@ -388,21 +390,6 @@ p {
     background-color: var(--primary);
 }
 
-.quote-section {
-    padding: 4rem 2rem;
-    text-align: center;
-    color: var(--bg-light);
-    text-shadow: 2px 2px 4px rgba(36, 42, 53,0.5);
-}
-
-blockquote {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-blockquote footer {
-    font-size: 1rem;
-}
 
 
 /* Existing styles remain the same */
@@ -435,7 +422,7 @@ blockquote footer {
     flex: 0 0 300px;
     height: 400px;
     margin-right: 2rem;
-    background-color: rgba(36, 42, 53, 0.1);
+    background-color: var(--dark-navy-trasparent);
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -454,7 +441,7 @@ blockquote footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 42, 53, 0.9);
+    background-color: var(--dark-navy-trasparent);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -521,7 +508,7 @@ blockquote footer {
 }
 
 .carousel-button {
-    background-color: rgba(36, 42, 53, 0.3);
+    background-color: var(--dark-navy-trasparent);
     border: none;
     color: var(--bg-light);
     font-size: 2rem;
@@ -572,13 +559,13 @@ blockquote footer {
     cursor: pointer;
     background-color: var(--bg-light)fff;
     padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--dark-navy-little-trasparent);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certification-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 8px var(--dark-navy-little-trasparent);
 }
 
 .certification-title {

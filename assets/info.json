@@ -1,135 +1,131 @@
 {
-    "projects": [
-      {
-        "title": "Cryptographic Chat",
-        "stack":"Cryptography",
-        "description": "This project addresses the need for a secure, end-to-end system where only users involved in a conversation can access the content of their chats. Neither the server nor potential attackers can decipher the communication. The objective is to uphold the five pillars of CIANA, as defined by NIST: Confidentiality, Integrity, Availability, Authentication, and Non-repudiation.",
-        "image": "assets/projects/CryptographicChat.png",
-        "url": "https://github.com/MrCharlesSG/CryptographicChat"
-      },
-      {
-        "title": "Secure and Interoperable Insurance Application",
-        "stack":"Spring Boot",
-        "description": "The project involved developing an Insurance Application, integrating a Spring Boot backend and JavaFX and React Native frontends. Security measures like OWASP ZAP and SonarLint scans were implemented to prevent vulnerabilities. JWT was utilized for secure and efficient user authentication, and interoperability was enhanced using Mule ESB and ActiveMQ.",
-        "image": "assets/projects/SecureAndInteroperableInsuranceApplication.png",
-        "url": "https://github.com/MrCharlesSG/Insurance-Documentation"
-      },
-      {
-        "title": "Vehicles Damages Detection",
-        "stack":"Computer Vision",
-        "description": "The project focused on semantic segmentation for vehicle damage detection. Using a dataset from Roboflow and various metrics, it enabled the training and testing of both state-of-the-art and custom architectures.",
-        "image": "assets/projects/VehiclesDamagesDetection.png",
-        "url":"https://github.com/MrCharlesSG/Vehicles-Damages-Detection"
-      },
-      {
-        "title": "Llama ChatBot",
-        "stack":"LLM",
-        "description": "This project is a full-stack web application that combines a Spring Boot backend with a Next.js frontend, designed to facilitate chatbot interactions. The chatbot provides real-time information such as currency exchange rates and weather updates for cities worldwide.",
-        "image": "assets/projects/LlamaChatBot.png",
-        "url": "https://github.com/MrCharlesSG/LlamaChatBot"
-      },
-      {
-        "title": "Ecommerce App",
-        "stack":"Android",
-        "description": "Final project of the subject of Application Development for Mobile Devices of the Software Engineering degree at Algebra University College (Zagreb). The project is an e-commerce app.",
-        "image": "assets/projects/EcommerceApp.png",
-        "url": "https://github.com/MrCharlesSG/EcommerceAndroid"
-      }
-    ],
-  
-  
-    "about": {
-      "name": "Carlos Serrano Gutiérrez",
-      "title": "Cybersecurity & Business-Minded Engineer",
-      "description": "I'm a software engineer with a strong focus on cybersecurity and a genuine interest in how technology shapes business decisions. I like finding practical ways to connect both worlds, always prioritizing open-mindedness, transparency, and discipline to make better decisions and adapt to new challenges.",
-      "image": "assets/img/personal-foto.jpeg"
+  "projects": [
+    {
+      "title": "Cryptographic Chat",
+      "stack": "Cryptography",
+      "description": "This project addresses the need for a secure, end-to-end system where only users involved in a conversation can access the content of their chats. Neither the server nor potential attackers can decipher the communication. The objective is to uphold the five pillars of CIANA, as defined by NIST: Confidentiality, Integrity, Availability, Authentication, and Non-repudiation.",
+      "image": "assets/projects/CryptographicChat.png",
+      "url": "https://github.com/MrCharlesSG/CryptographicChat"
     },
-    "skills": [
-      {
-        "name": "Computer Vision",
-        "percentage": 78
-      },
-      {
-        "name": "Spring Boot",
-        "percentage": 90
-      },
-      {
-        "name": "Python",
-        "percentage": 80
-      },
-      {
-        "name": "Cryptography",
-        "percentage": 74
-      },
-      {
-        "name": "Strategic Thinking",
-        "percentage": 82
-      },
-      {
-        "name": "Decision Making",
-        "percentage": 90
-      },
-      {
-        "name": "Discipline",
-        "percentage": 97
-      },
-      {
-        "name": "Motivation",
-        "percentage": 100
-      }
-    ],
-    "education": [
-      {
-        "period": "2021 - 2023",
-        "title": "Software Engineering",
-        "institution": "Complutense University of Madrid, Spain"
-      },
-      {
-        "period": "2023 - 2024",
-        "title": "Software Engineering",
-        "institution": "Algebra University of Zagreb, Croatia"
-      },
-      {
-        "period": "2024 - 2025",
-        "title": "Software Engineering",
-        "institution": "Complutense University of Madrid, Spain"
-      }
-    ],
-    "experience": [
-      {
-        "period": "2025 - Today",
-        "title": "Cybersecurity Advisory Intern",
-        "company": "PricewaterhouseCoopers, Madrid, Spain"
-      }
-    ],
-    "quote": {
-      "text": "Acknowledging your weaknesses is not the same as surrendering to them.",
-      "author": "Ray Dalio",
-      "image":"assets/img/quote.jpg"
+    {
+      "title": "Secure and Interoperable Insurance Application",
+      "stack": "Spring Boot",
+      "description": "The project involved developing an Insurance Application, integrating a Spring Boot backend and JavaFX and React Native frontends. Security measures like OWASP ZAP and SonarLint scans were implemented to prevent vulnerabilities. JWT was utilized for secure and efficient user authentication, and interoperability was enhanced using Mule ESB and ActiveMQ.",
+      "image": "assets/projects/SecureAndInteroperableInsuranceApplication.png",
+      "url": "https://github.com/MrCharlesSG/Insurance-Documentation"
     },
-    "home": {
-      "name": "Carlos<br>Serrano Gutiérrez",
-      "subtitle": "Driven by <em class='text-primary-light'>cybersecurity</em>, <em class='text-primary-light'>business</em> strategy, and a commitment to continuous growth and <em class='text-primary-light'>discipline</em>.",
-      "resume": "/assets/CV_Carlos_Serrano_Gutierrez.pdf"
+    {
+      "title": "Vehicles Damages Detection",
+      "stack": "Computer Vision",
+      "description": "The project focused on semantic segmentation for vehicle damage detection. Using a dataset from Roboflow and various metrics, it enabled the training and testing of both state-of-the-art and custom architectures.",
+      "image": "assets/projects/VehiclesDamagesDetection.png",
+      "url": "https://github.com/MrCharlesSG/Vehicles-Damages-Detection"
+    },
+    {
+      "title": "Llama ChatBot",
+      "stack": "LLM",
+      "description": "This project is a full-stack web application that combines a Spring Boot backend with a Next.js frontend, designed to facilitate chatbot interactions. The chatbot provides real-time information such as currency exchange rates and weather updates for cities worldwide.",
+      "image": "assets/projects/LlamaChatBot.png",
+      "url": "https://github.com/MrCharlesSG/LlamaChatBot"
+    },
+    {
+      "title": "Ecommerce App",
+      "stack": "Android",
+      "description": "Final project of the subject of Application Development for Mobile Devices of the Software Engineering degree at Algebra University College (Zagreb). The project is an e-commerce app.",
+      "image": "assets/projects/EcommerceApp.png",
+      "url": "https://github.com/MrCharlesSG/EcommerceAndroid"
+    }
+  ],
+  "about": {
+    "name": "Carlos Serrano Gutiérrez",
+    "title": "Cybersecurity & Business-Minded Engineer",
+    "description": "I'm a software engineer with a strong focus on cybersecurity and a genuine interest in how technology shapes business decisions. I like finding practical ways to connect both worlds, always prioritizing open-mindedness, transparency, and discipline to make better decisions and adapt to new challenges.",
+    "image": "assets/img/personal-foto.jpeg"
   },
-  
-    "certifications": [
-  {
-    "title": "Cambridge Advanced Certificate (CAE)",
-    "description": "An internationally recognized English language certification that assesses high-level proficiency in reading, writing, listening, and speaking. It demonstrates the ability to communicate effectively in professional and academic settings."
+  "skills": [
+    {
+      "name": "Computer Vision",
+      "percentage": 78
+    },
+    {
+      "name": "Spring Boot",
+      "percentage": 90
+    },
+    {
+      "name": "Python",
+      "percentage": 80
+    },
+    {
+      "name": "Cryptography",
+      "percentage": 74
+    },
+    {
+      "name": "Strategic Thinking",
+      "percentage": 82
+    },
+    {
+      "name": "Decision Making",
+      "percentage": 90
+    },
+    {
+      "name": "Discipline",
+      "percentage": 97
+    },
+    {
+      "name": "Motivation",
+      "percentage": 100
+    }
+  ],
+  "education": [
+    {
+      "period": "2021 - 2023",
+      "title": "Software Engineering",
+      "institution": "Complutense University of Madrid, Spain"
+    },
+    {
+      "period": "2023 - 2024",
+      "title": "Software Engineering",
+      "institution": "Algebra University of Zagreb, Croatia"
+    },
+    {
+      "period": "2024 - 2025",
+      "title": "Software Engineering",
+      "institution": "Complutense University of Madrid, Spain"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2025 - Today",
+      "title": "Cybersecurity Advisory Intern",
+      "company": "PricewaterhouseCoopers, Madrid, Spain"
+    }
+  ],
+  "quote": {
+    "text": "Acknowledging your weaknesses is not the same as surrendering to them.",
+    "author": "Ray Dalio",
+    "image": "assets/img/quote.jpg"
   },
-  {
-    "title": "Attendance Red Hat OpenShift Administration I: Operating a Production Cluster (DO180)",
-    "description": "An introductory course focused on managing and operating an OpenShift cluster in a production environment. Covers container orchestration, deployment automation, and troubleshooting techniques for Kubernetes-based applications."
+  "home": {
+    "name": "Carlos<br>Serrano Gutiérrez",
+    "subtitle": "Driven by <em class='text-primary-light'>cybersecurity</em>, <em class='text-primary-light'>business</em> strategy, and a commitment to continuous growth and <em class='text-primary-light'>discipline</em>.",
+    "resume": "/assets/CV_Carlos_Serrano_Gutierrez.pdf"
   },
-  {
-    "title": "Problem Solving with Excel",
-    "description": "A PwC certification that covers advanced Excel techniques for data analysis and problem-solving. Topics include data structuring, financial modeling, and the use of functions to enhance business decision-making."
-  },
-  {
-    "title": "Data-Driven Decision Making",
-    "description": "A PwC certification that provides insights into leveraging data for strategic decision-making. Covers key analytical methodologies, visualization techniques, and frameworks for making informed business choices."
-  }
-]
-
+  "certifications": [
+    {
+      "title": "Cambridge Advanced Certificate (CAE)",
+      "description": "An internationally recognized English language certification that assesses high-level proficiency in reading, writing, listening, and speaking. It demonstrates the ability to communicate effectively in professional and academic settings."
+    },
+    {
+      "title": "Attendance Red Hat OpenShift Administration I: Operating a Production Cluster (DO180)",
+      "description": "An introductory course focused on managing and operating an OpenShift cluster in a production environment. Covers container orchestration, deployment automation, and troubleshooting techniques for Kubernetes-based applications."
+    },
+    {
+      "title": "Problem Solving with Excel",
+      "description": "A PwC certification that covers advanced Excel techniques for data analysis and problem-solving. Topics include data structuring, financial modeling, and the use of functions to enhance business decision-making."
+    },
+    {
+      "title": "Data-Driven Decision Making",
+      "description": "A PwC certification that provides insights into leveraging data for strategic decision-making. Covers key analytical methodologies, visualization techniques, and frameworks for making informed business choices."
+    }
+  ]
 }

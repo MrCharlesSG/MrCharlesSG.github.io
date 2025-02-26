@@ -1,115 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carlos Serrano Gutierrez</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-</head>
-<body class=" w-100">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  </head>
+  <body class="w-100">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#home">CSG</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto" id="nav-links">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#home">CSG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="nav-links">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
+
     <section id="home" class="section section-in">
-        <div id="particles-js"></div>
-        <div class="container text-center content" id="home-content">
-            <!-- Contenido dinámico se insertará aquí -->
-        </div>
+      <div id="particles-js"></div>
+      <div class="container text-center content" id="home-content">
+        <!-- Contenido dinámico se insertará aquí -->
+      </div>
     </section>
-    
-    
+
     <!-- ABOUT -->
 
     <section id="about" class="section-in">
-        <div class="about-content section">
-            <h2 class=" my-4 text-dark">About</h2>
-            <div class="about-buttons">
-                <button class="about-btn active" data-target="about-me">About</button>
-                <button class="about-btn" data-target="skills">Skills</button>
-                <button class="about-btn" data-target="education">Education</button>
-                <button class="about-btn" data-target="experience">Experience</button>
-            </div>
-            <div class="about-info">
-                <div id="about-me" class="detail-content active text-center">
-                    <!-- This will be filled dynamically -->
-                </div>
-                <div id="skills" class="detail-content">
-                    <div class="skills-container">
-                        <!-- This will be filled dynamically -->
-                    </div>
-                </div>
-                <div id="education" class="detail-content">
-                    <div class="timeline">
-                        <!-- This will be filled dynamically -->
-                    </div>
-                </div>
-                <div id="experience" class="detail-content">
-                    <div class="timeline">
-                        <!-- This will be filled dynamically -->
-                    </div>
-                </div>
-            </div>
+      <div class="about-content section">
+        <h2 class="my-4 text-dark">About</h2>
+        <div class="about-buttons">
+          <button class="about-btn active" data-target="about-me">About</button>
+          <button class="about-btn" data-target="skills">Skills</button>
+          <button class="about-btn" data-target="education">Education</button>
+          <button class="about-btn" data-target="experience">Experience</button>
         </div>
-        <div class="quote-section section">
+        <div class="about-info">
+          <div id="about-me" class="detail-content active text-center">
             <!-- This will be filled dynamically -->
+          </div>
+          <div id="skills" class="detail-content">
+            <div class="skills-container">
+              <!-- This will be filled dynamically -->
+            </div>
+          </div>
+          <div id="education" class="detail-content">
+            <div class="timeline">
+              <!-- This will be filled dynamically -->
+            </div>
+          </div>
+          <div id="experience" class="detail-content">
+            <div class="timeline">
+              <!-- This will be filled dynamically -->
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="quote-section section">
+        <!-- This will be filled dynamically -->
+      </div>
     </section>
 
     <!---->
     <section id="projects" class="section section-in">
-        <div class="container">
-            <h2 class="section-title text-warning">Projects</h2>
-            <div class="projects-carousel">
-                <button class="carousel-button prev">&lt;</button>
-                <div class="projects-wrapper">
-                    <!-- Projects will be dynamically inserted here -->
-                </div>
-                <button class="carousel-button next">&gt;</button>
-            </div>
+      <div class="container">
+        <h2 class="section-title text-warning">Projects</h2>
+        <div class="projects-carousel">
+          <button class="carousel-button prev">&lt;</button>
+          <div class="projects-wrapper">
+            <!-- Projects will be dynamically inserted here -->
+          </div>
+          <button class="carousel-button next">&gt;</button>
         </div>
+      </div>
     </section>
     <section id="certifications" class="section section-in">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-list">
-            </div>
-        </div>
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-list"></div>
+      </div>
     </section>
     <section id="contact" class="section section-in">
-        <div id="particles-contact"></div>
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="social-icons">
-                <a href="https://github.com/MrCharlesSG" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/carlos-serrano-gutierrez/" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
+      <div id="particles-contact"></div>
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="social-icons">
+          <a
+            href="https://github.com/MrCharlesSG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/carlos-serrano-gutierrez/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
+      </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>

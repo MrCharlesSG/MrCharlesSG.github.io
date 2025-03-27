@@ -42,20 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navbarCollapse.addEventListener('show.bs.collapse', () => navbar.classList.add('show'));
     navbarCollapse.addEventListener('hide.bs.collapse', () => navbar.classList.remove('show'));
-    const aboutButtons = document.querySelectorAll('.about-btn');
-    const detailContents = document.querySelectorAll('.detail-content');
 
-    aboutButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const target = button.getAttribute('data-target');
-            
-            aboutButtons.forEach(btn => btn.classList.remove('active'));
-            detailContents.forEach(content => content.classList.remove('active'));
-            
-            button.classList.add('active');
-            document.getElementById(target).classList.add('active');
-        });
-    });
     fetch("assets/info.json")
     .then(response => response.json())
     .then(data => {
@@ -70,20 +57,41 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('about-me').innerHTML = `
             <img src="${data.about.image}" alt="${data.about.name}" class="about-profile-pic">
             <h2 class="text-primary">${data.about.name}</h2>
-            <h4 class="text-primary">${data.about.title}</h4>
+            <h4 class="text-secondary">${data.about.title}</h4>
             <p class="dark-text">${data.about.description}</p>
         `;
+        let educationHTML = '';
+    data.education.forEach(item => {
+      educationHTML += `
+        <li class="timeline-item list-unstyled">
 
-        // Skills Section
-        const skillsContainer = document.querySelector('#skills .skills-container');
-        skillsContainer.innerHTML = data.skills.map(skill => `
-            <div class="skill">
-                <span>${skill.name}</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: ${skill.percentage}%">${skill.percentage}%</div>
-                </div>
-            </div>
-        `).join('');
+          <div class="timeline-content">
+            <h5 class="dark-text">${item.period}</h5>
+                        <h6 class="text-secondary">${item.title}</h6>
+                        <p class="text-primary">${item.institution}</p>
+          </div>
+        </li>
+      `;
+    });
+    document.getElementById('education-timeline').innerHTML = educationHTML;
+
+    // Experience Timeline
+    let experienceHTML = '';
+    data.experience.forEach(item => {
+      experienceHTML += `
+        <li class="timeline-item list-unstyled">
+
+          <div class="timeline-content">
+                        <h5 class="dark-text">${item.period}</h5>
+                        <h6 class="text-secondary">${item.title}</h6>
+                        <p class="text-primary">${item.company}</p>
+          </div>
+        </li>
+      `;
+    });
+    document.getElementById('experience-timeline').innerHTML = experienceHTML;
+
+
         
         // Projects Section
         const projectsWrapper = document.querySelector(".projects-wrapper");
@@ -98,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h3 class="project-title">${project.title}</h3>
                         <div class="project-tags">${project.stack.map(tag => `<span class="project-category">${tag}</span>`).join(" ")}</div>
                         <p class="project-description">${project.description}</p>
-                        <a href="${project.url}" class="project-link" target="_blank" rel="noopener noreferrer">More Info</a>
+                        <a href="${project.url}" class="project-link" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>
                 </div>
             `).join('');
@@ -112,25 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 loadMoreButton.style.display = "none";
             }
         });
-        const educationTimeline = document.querySelector('#education .timeline');
-        data.education.forEach(edu => {
-            educationTimeline.innerHTML += `
-                <div class="timeline-item">
-                    <h5 class="text-primary">${edu.period}</h5>
-                    <h6 class="text-primary">${edu.title}</h6>
-                    <p class="text-primary">${edu.institution}</p>
-                </div>
-            `;
-        });
-        // Experience Section
-        const experienceTimeline = document.querySelector('#experience .timeline');
-        experienceTimeline.innerHTML = data.experience.map(exp => `
-            <div class="timeline-item">
-                <h5 class="text-primary">${exp.period}</h5>
-                <h6 class="text-primary">${exp.title}</h6>
-                <p class="text-primary">${exp.company}</p>
-            </div>
-        `).join('');
+    
 
         // Quote Section
         const quoteSection = document.querySelector('.quote-section');

@@ -27,7 +27,6 @@ rgb(0, 210, 242)
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--darker-navy);
-    border-radius: 8px;
     border: 3px solid var(--dark-navy);
 }
 
@@ -149,7 +148,7 @@ body {
 .btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
-    color: var(--dark-navy);
+    color: var(--bg-light);
     font-size: 1rem;
     padding: 10px 20px;
     border-radius: 0% !important;
@@ -158,10 +157,10 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     border-color: var(--primary);
-    color: var(--dark-navy);
     font-weight:bolder;
+    box-shadow: 2px 2px 2px var(--primary);
 }
 
 h1 {
@@ -223,114 +222,7 @@ p {
     color: var(--bg-light);
 }
 
-.about-info {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 2rem;
-}
 
-.about-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--dark-navy);
-    padding: 10px 0;
-    top: 0;
-    z-index: 100;
-}
-
-.about-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 0.8rem;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
-    color: var(--bg-light);
-    flex-grow: 1;
-    text-align: center;
-    border-right: 1px solid var(--dark-navy-trasparent);
-}
-
-/* Existing styles remain the same */
-
-/* Skills section */
-.skills-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.text-primary{
-    color: var(--primary-dark) !important;
-}
-
-
-
-.skills-column {
-    flex: 1;
-}
-
-.skill {
-    margin-bottom: 1rem;
-    color: var(--primary-dark);
-}
-
-.skill span {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.progress {
-    height: 20px;
-    background-color: var(--dark-navy);
-    overflow: hidden;
-    border-radius: 2%;
-}
-
-.progress-bar {
-    height: 100%;
-    background-color: var(--primary);
-    text-align: right;
-    padding-right: 5px;
-    line-height: 20px;
-    color: var(--dark-navy);
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-    }
-}
-
-/* Rest of the existing styles */
-
-.about-btn:last-child {
-    border-right: none;
-}
-
-.about-btn.active {
-    background-color: var(--primary);
-    color: var(--dark-navy) !important;
-}
-
-.about-btn:hover {
-    background-color: var(--primary-trasparent);
-}
-
-.detail-content {
-    display: none;
-    padding-top: 20px;
-}
-
-.detail-content.active {
-    display: block;
-}
 
 .quote-section {
     padding: 4rem 2rem;
@@ -361,37 +253,72 @@ p {
     color: var(--primary);
 }
 
-.timeline {
+/* Estilo para el contenedor principal de los timelines */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .timeline-section {
+    margin-bottom: 30px;
+    padding: 1rem;
+    /*border: 1px solid var(--dark-navy-big-trasparent);*/
+    
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Línea de tiempo general */
+  .timeline {
     position: relative;
     padding-left: 30px;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: var(--primary);
-}
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: var(--dark-navy);
+    }
 
-.timeline-item {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
+    .timeline-item {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -34px;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--primary);
-}
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -34px;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--dark-navy);
+    }
 
+  .darker-text{
+    color: var(--darker-navy);
+  }
+  /* Diseño en dos columnas para pantallas grandes y medianas */
+  @media (min-width: 768px) {
+    .timeline-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .timeline-section {
+      width: 45%;
+    }
+  }
+  
+  .text-secondary{
+    color: var(--primary) !important;
+  }
 
 
 /* Existing styles remain the same */
@@ -432,7 +359,6 @@ background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
   .project-card {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
     overflow: hidden;
     padding: 1rem;
     text-align: center;
@@ -463,7 +389,6 @@ background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
     background-color: var(--dark-navy-little-trasparent);
     color: var(--primary);
     padding: 0.25rem 0.5rem;
-    border-radius: 4px;
     font-size: 0.8rem;
     border: 1px solid var(--dark-navy-big-trasparent);
     cursor: default;
@@ -483,7 +408,6 @@ background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
     color: var(--bg-light);
     background-color: var(--primary);
     padding: 0.5rem 1rem;
-    border-radius: 4px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
@@ -501,7 +425,6 @@ background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
     background-color: var(--primary);
     color: var(--bg-light);
     border: none;
-    border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
@@ -571,6 +494,10 @@ background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
 
 .text-primary-light{
     color: var(--primary);
+}
+
+.text-primary{
+    color: var(--primary-dark) !important;
 }
 
 

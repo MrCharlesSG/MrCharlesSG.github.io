@@ -49,40 +49,6 @@
     "description": "I'm a software engineer with a strong focus on cybersecurity and a genuine interest in how technology shapes business decisions. I like finding practical ways to connect both worlds, always prioritizing open-mindedness, transparency, and discipline to make better decisions and adapt to new challenges.",
     "image": "assets/img/personal-foto.jpeg"
   },
-  "skills": [
-    {
-      "name": "Computer Vision",
-      "percentage": 78
-    },
-    {
-      "name": "Spring Boot",
-      "percentage": 90
-    },
-    {
-      "name": "Python",
-      "percentage": 80
-    },
-    {
-      "name": "Cryptography",
-      "percentage": 74
-    },
-    {
-      "name": "Strategic Thinking",
-      "percentage": 82
-    },
-    {
-      "name": "Decision Making",
-      "percentage": 90
-    },
-    {
-      "name": "Discipline",
-      "percentage": 97
-    },
-    {
-      "name": "Motivation",
-      "percentage": 100
-    }
-  ],
   "education": [
     {
       "period": "2021 - 2023",

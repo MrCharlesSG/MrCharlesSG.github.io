@@ -2,38 +2,45 @@
   "projects": [
     {
       "title": "Cryptographic Chat",
-      "stack": "Cryptography",
+      "stack": ["Cryptography", "Python", "Flask"],
       "description": "This project addresses the need for a secure, end-to-end system where only users involved in a conversation can access the content of their chats. Neither the server nor potential attackers can decipher the communication. The objective is to uphold the five pillars of CIANA, as defined by NIST: Confidentiality, Integrity, Availability, Authentication, and Non-repudiation.",
       "image": "assets/projects/CryptographicChat.png",
       "url": "https://github.com/MrCharlesSG/CryptographicChat"
     },
     {
-      "title": "Secure and Interoperable Insurance Application",
-      "stack": "Spring Boot",
+      "title": "Insurance Application",
+      "stack": ["Spring Boot", "React Native", "JavaFX"],
       "description": "The project involved developing an Insurance Application, integrating a Spring Boot backend and JavaFX and React Native frontends. Security measures like OWASP ZAP and SonarLint scans were implemented to prevent vulnerabilities. JWT was utilized for secure and efficient user authentication, and interoperability was enhanced using Mule ESB and ActiveMQ.",
       "image": "assets/projects/SecureAndInteroperableInsuranceApplication.png",
       "url": "https://github.com/MrCharlesSG/Insurance-Documentation"
     },
     {
-      "title": "Vehicles Damages Detection",
-      "stack": "Computer Vision",
+      "title": "Car Damages Detection",
+      "stack": ["Computer Vision", "Python"],
       "description": "The project focused on semantic segmentation for vehicle damage detection. Using a dataset from Roboflow and various metrics, it enabled the training and testing of both state-of-the-art and custom architectures.",
       "image": "assets/projects/VehiclesDamagesDetection.png",
       "url": "https://github.com/MrCharlesSG/Vehicles-Damages-Detection"
     },
     {
       "title": "Llama ChatBot",
-      "stack": "LLM",
+      "stack": ["LLM", "Spring Boot", "Next.js"],
       "description": "This project is a full-stack web application that combines a Spring Boot backend with a Next.js frontend, designed to facilitate chatbot interactions. The chatbot provides real-time information such as currency exchange rates and weather updates for cities worldwide.",
       "image": "assets/projects/LlamaChatBot.png",
       "url": "https://github.com/MrCharlesSG/LlamaChatBot"
     },
     {
       "title": "Ecommerce App",
-      "stack": "Android",
+      "stack": ["Android", "Kotlin", "Firebase"],
       "description": "Final project of the subject of Application Development for Mobile Devices of the Software Engineering degree at Algebra University College (Zagreb). The project is an e-commerce app.",
       "image": "assets/projects/EcommerceApp.png",
       "url": "https://github.com/MrCharlesSG/EcommerceAndroid"
+    },
+    {
+      "title": "Unioversitary Events",
+      "stack": ["Express.js", "HTML", "Bootstrap"],
+      "description": "",
+      "image": "assets/projects/EventosUniv.png",
+      "url": "https://github.com/MrCharlesSG/EventosUniversitariosAW"
     }
   ],
   "about": {

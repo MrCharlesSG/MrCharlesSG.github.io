@@ -1,11 +1,12 @@
 :root {
-    --dark-navy: rgb(36, 42, 53); 
+    --dark-navy: #242a35; 
     --darker-navy: rgb(21, 23, 28); 
     --bg-light:#f8f9fa;
-    --primary:rgb(229, 56, 137);
+    --primary:#e53889;
     --primary-dark:#AC1754;
     --dark-navy-trasparent: rgba(36, 42, 53, 0.7);
     --dark-navy-little-trasparent: rgba(36, 42, 53, 0.2);
+    --dark-navy-big-trasparent: rgba(36, 42, 53, 0.8);
     --primary-trasparent: rgba(229, 56, 137, 0.4);
 }
 /*
@@ -195,6 +196,7 @@ p {
     border: 3px solid var(--primary-dark); /* This adds a golden border. Adjust color as needed */
     margin-bottom: 1rem; /* This adds some space below the image */
     transition: transform 0.3s ease; /* This adds a smooth transition for the hover effect */
+    
 }
 
 .about-profile-pic:hover {
@@ -399,134 +401,117 @@ p {
 
 /* Projects Section */
 #projects {
-    background-color: var(--dark-navy);
+    background: rgb(109,38,71);
+background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
     color: var(--bg-light);
     padding: 4rem 0;
     overflow: hidden;
 }
-
-/* Update existing styles */
-
+/* styles.css */
 .projects-wrapper {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding: 0 2rem; /* Add padding to create space between buttons and projects */
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+  
+  @media (min-width: 768px) {
+    .projects-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .projects-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 
-.project-card {
-    flex: 0 0 300px;
-    height: 400px;
-    margin-right: 2rem;
-    background-color: var(--dark-navy-trasparent);
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    scroll-snap-align: start;
-}
-
-.project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark-navy-trasparent);
+  
+  .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
     padding: 1rem;
-}
-
-.project-card:hover .project-info {
-    opacity: 1;
-}
-
-.project-content {
     text-align: center;
-}
-
-.project-title {
-    font-size: 1.2rem;
+    box-shadow: 1px 2px 3px var(--bg-light);
+  }
+  
+  .project-image {
+    height: 200px;
+    width: auto;
+    object-fit:contain;
+  }
+  
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-bottom: 0.5rem;
-}
-
-.project-category {
-    display: inline-block;
-    background-color: var(--primary);
-    color: var(--dark-navy);
+  }
+  
+  .project-category {
+    background-color: var(--dark-navy-little-trasparent);
+    color: var(--primary);
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-size: 0.8rem;
-}
-
-.project-description {
-    font-size: 0.9rem;
+    border: 1px solid var(--dark-navy-big-trasparent);
+    cursor: default;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-}
-
-.project-link {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Rest of the CSS remains the same */
-
-.projects-carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.project-card:hover .project-info {
-    opacity: 1;
-}
-
-.project-link {
-    color: var(--primary);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.carousel-button {
-    background-color: var(--dark-navy-trasparent);
-    border: none;
+  }
+  
+  .project-link {
     color: var(--bg-light);
-    font-size: 2rem;
-    padding: 1rem;
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  
+  .project-link:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .load-more-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--bg-light);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
+    font-weight: bold;
+  }
+  
+  .load-more-button:hover {
+    background-color: var(--primary-dark);
+  }
 
-.carousel-button.prev {
-    left: 0;
-}
-
-.carousel-button.next {
-    right: 0;
-}
+  
 
 
 #certifications {

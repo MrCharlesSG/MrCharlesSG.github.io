@@ -1,24 +1,45 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+
+<!-- TOC end -->
+
+<!-- TOC --><a name="portfolio-customization-guide"></a>
 # Portfolio Customization Guide
 
 Welcome to the Portfolio Customization Guide! This step-by-step tutorial will help you personalize your portfolio website. Whether you want to change your content, images, colors, or fonts, this guide will walk you through everything you need to make the website uniquely yours.
 
+<!-- TOC --><a name="table-of-contents"></a>
 ## Table of Contents
 
-1. Project Structure Overview
-2. Step-by-Step Implementation
-3. Customizing Page Information
-4. Customizing Content (Text)
-5. Changing Style and Colors
-6. Replacing Images
-7. Modifying Scripts and Animations
-8. Removing Sections You Don’t Need
+   * [1. Project Structure Overview](#1-project-structure-overview)
+   * [2. Step-by-Step Implementation](#2-step-by-step-implementation)
+   * [3. Customizing Page Information](#3-customizing-page-information)
+      + [1. Change the Page Title and Navbar:](#1-change-the-page-title-and-navbar)
+      + [2. Update Contact Links:](#2-update-contact-links)
+   * [4. Customizing Content (Text)](#4-customizing-content-text)
+      + [Home Section:](#home-section)
+      + [About Section:](#about-section)
+      + [Projects Section:](#projects-section)
+   * [5. Changing Style and Colors](#5-changing-style-and-colors)
+      + [1. Professional Palette:](#1-professional-palette)
+      + [2. Futuristic Palette:](#2-futuristic-palette)
+      + [3. Pastel Palette:](#3-pastel-palette)
+      + [Fonts:](#fonts)
+   * [6. Replacing Images](#6-replacing-images)
+      + [Favicon:](#favicon)
+   * [7. Modifying Scripts and Animations](#7-modifying-scripts-and-animations)
+      + [Particle Animation:](#particle-animation)
+      + [Adding New Functionality:](#adding-new-functionality)
+   * [8. Removing Sections You Don’t Need](#8-removing-sections-you-dont-need)
 
 ---
 
+<!-- TOC --><a name="1-project-structure-overview"></a>
 ## 1. Project Structure Overview
 
 The portfolio website is organized into several files and folders. Each one serves a specific purpose:
 
+<!-- TOC --><a name="key-files"></a>
 ### Key Files:
 
 - **`index.html`**: The main structure of the website (think of it as the skeleton).
@@ -26,6 +47,7 @@ The portfolio website is organized into several files and folders. Each one serv
 - **`script.js`**: Adds interactive features (like animations and button clicks).
 - **`assets/info.json`**: Contains the data displayed across your website (your name, projects, skills, etc.).
 
+<!-- TOC --><a name="folder-breakdown"></a>
 ### Folder Breakdown:
 
 ```
@@ -54,6 +76,7 @@ portfolio/
 
 ---
 
+<!-- TOC --><a name="2-step-by-step-implementation"></a>
 ## 2. Step-by-Step Implementation
 
 Here’s how to get your portfolio up and running:
@@ -68,10 +91,12 @@ Here’s how to get your portfolio up and running:
 
 ---
 
+<!-- TOC --><a name="3-customizing-page-information"></a>
 ## 3. Customizing Page Information
 
 There are a few places where you need to edit the text that appears on your website.
 
+<!-- TOC --><a name="1-change-the-page-title-and-navbar"></a>
 ### 1. Change the Page Title and Navbar:
 
 To change the title shown in the browser tab and the name in the navbar:
@@ -92,6 +117,7 @@ To change the title shown in the browser tab and the name in the navbar:
     ```
     
 
+<!-- TOC --><a name="2-update-contact-links"></a>
 ### 2. Update Contact Links:
 
 If you want to update your social media links (like GitHub or LinkedIn), find the contact section inside `index.html`. Replace the existing links with your own.
@@ -116,10 +142,12 @@ If you want to add another social media link, place it in the spot labeled `new 
 
 ---
 
+<!-- TOC --><a name="4-customizing-content-text"></a>
 ## 4. Customizing Content (Text)
 
 Most of the content you see on the website is stored in the **`info.json`** file. Open it to modify your name, bio, education, projects, etc.
 
+<!-- TOC --><a name="home-section"></a>
 ### Home Section:
 
 Change your name, subtitle, and resume link:
@@ -133,6 +161,7 @@ Change your name, subtitle, and resume link:
 
 ```
 
+<!-- TOC --><a name="about-section"></a>
 ### About Section:
 
 Add your full name, professional title, description, and photo:
@@ -147,6 +176,7 @@ Add your full name, professional title, description, and photo:
 
 ```
 
+<!-- TOC --><a name="projects-section"></a>
 ### Projects Section:
 
 For each project, include its title, description, tech stack, and image.
@@ -166,6 +196,7 @@ For each project, include its title, description, tech stack, and image.
 
 ---
 
+<!-- TOC --><a name="5-changing-style-and-colors"></a>
 ## 5. Changing Style and Colors
 
 To change the look of your website, update the colors in **`styles.css`**. Look for the following section at the top of the file:
@@ -187,6 +218,7 @@ You can change these values to customize the colors used on the site.
 
 Here are some color palette suggestions:
 
+<!-- TOC --><a name="1-professional-palette"></a>
 ### 1. Professional Palette:
 
 ```css
@@ -202,6 +234,7 @@ Here are some color palette suggestions:
 }
 ```
 
+<!-- TOC --><a name="2-futuristic-palette"></a>
 ### 2. Futuristic Palette:
 
 ```css
@@ -217,6 +250,7 @@ Here are some color palette suggestions:
 }
 ```
 
+<!-- TOC --><a name="3-pastel-palette"></a>
 ### 3. Pastel Palette:
 
 ```css
@@ -232,13 +266,11 @@ Here are some color palette suggestions:
 }
 ```
 
-<aside>
-<img src="/icons/light-bulb_green.svg" alt="/icons/light-bulb_green.svg" width="40px" />
-
 Be aware that dark-navy refers to navbar an filter for the images, primary is the accent color, and the bg-light is the contrary of dark-navy
 
 </aside>
 
+<!-- TOC --><a name="fonts"></a>
 ### Fonts:
 
 To change the font:
@@ -267,6 +299,7 @@ body {
 
 ---
 
+<!-- TOC --><a name="6-replacing-images"></a>
 ## 6. Replacing Images
 
 To update your images:
@@ -276,6 +309,7 @@ To update your images:
 - **Quote background image**: Replace `assets/img/quote.jpg`.
 - **Project images**: Add your images to `assets/projects/` and update the paths in `info.json`.
 
+<!-- TOC --><a name="favicon"></a>
 ### Favicon:
 
 To change the small icon that appears in the browser tab:
@@ -285,8 +319,10 @@ To change the small icon that appears in the browser tab:
 
 ---
 
+<!-- TOC --><a name="7-modifying-scripts-and-animations"></a>
 ## 7. Modifying Scripts and Animations
 
+<!-- TOC --><a name="particle-animation"></a>
 ### Particle Animation:
 
 If you want to adjust the particle animation on the homepage, open **`script.js`** and modify the values like so:
@@ -301,6 +337,7 @@ particlesJS('particles-js', {
 
 ```
 
+<!-- TOC --><a name="adding-new-functionality"></a>
 ### Adding New Functionality:
 
 To add interactive features, like new buttons or actions, add your JavaScript code at the bottom of **`script.js`**.
@@ -319,6 +356,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ---
 
+<!-- TOC --><a name="8-removing-sections-you-dont-need"></a>
 ## 8. Removing Sections You Don’t Need
 
 If you want to remove a section (e.g., the "Certifications" section), follow these steps:

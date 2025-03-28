@@ -55,7 +55,7 @@
       "title": "DevOps Notes",
       "stack": ["Kubernetes", "Docker"],
       "description": "A collection of notes and resources for DevOps exam preparation, covering Kubernetes, Docker, and application deployment. Includes detailed labs, troubleshooting tips, and practical insights to strengthen understanding of containerization and Kubernetes management.",
-      "image": "assets/projects/DevOps-notes.png",
+      "image": "assets/projects/DevOpsNotes.png",
       "url": "https://github.com/MrCharlesSG/DevOps-Notes"
     }
   ],

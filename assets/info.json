@@ -1,25 +1,11 @@
 {
   "projects": [
-    {
-      "title": "Cryptographic Chat",
-      "stack": ["Cryptography", "Python", "Flask"],
-      "description": "This project addresses the need for a secure, end-to-end system where only users involved in a conversation can access the content of their chats. Neither the server nor potential attackers can decipher the communication. The objective is to uphold the five pillars of CIANA, as defined by NIST: Confidentiality, Integrity, Availability, Authentication, and Non-repudiation.",
-      "image": "assets/projects/CryptographicChat.png",
-      "url": "https://github.com/MrCharlesSG/CryptographicChat"
-    },
-    {
+        {
       "title": "Insurance Application",
       "stack": ["Spring Boot", "React Native", "JavaFX"],
-      "description": "The project involved developing an Insurance Application, integrating a Spring Boot backend and JavaFX and React Native frontends. Security measures like OWASP ZAP and SonarLint scans were implemented to prevent vulnerabilities. JWT was utilized for secure and efficient user authentication, and interoperability was enhanced using Mule ESB and ActiveMQ.",
+      "description": "The project involved developing an Insurance Application, integrating a Spring Boot backend and JavaFX and React Native frontends. Security measures like OWASP ZAP and SonarLint scans were implemented to prevent vulnerabilities. JWT was utilized for secure and efficient user authentication. The server was dockerized",
       "image": "assets/projects/SecureAndInteroperableInsuranceApplication.png",
       "url": "https://github.com/MrCharlesSG/Insurance-Documentation"
-    },
-    {
-      "title": "Car Damages Detection",
-      "stack": ["Computer Vision", "Python"],
-      "description": "The project focused on semantic segmentation for vehicle damage detection. Using a dataset from Roboflow and various metrics, it enabled the training and testing of both state-of-the-art and custom architectures.",
-      "image": "assets/projects/VehiclesDamagesDetection.png",
-      "url": "https://github.com/MrCharlesSG/Vehicles-Damages-Detection"
     },
     {
       "title": "Llama ChatBot",
@@ -29,33 +15,49 @@
       "url": "https://github.com/MrCharlesSG/LlamaChatBot"
     },
     {
+      "title": "Universitary Events",
+      "stack": ["Express.js", "HTML", "Bootstrap"],
+      "description": "A social media platform for events, built with Express.js and vanilla JavaScript on the frontend. It features authentication and authorization with two distinct user roles. Users can create and manage their own events, register for others, and enjoy a variety of additional features.",
+      "image": "assets/projects/EventosUniv.png",
+      "url": "https://github.com/MrCharlesSG/EventosUniversitariosAW"
+    },
+    {
+      "title": "Car Damages Detection",
+      "stack": ["Computer Vision", "Python"],
+      "description": "The project focused on semantic segmentation for vehicle damage detection. Using a dataset from Roboflow and various metrics, it enabled the training and testing of both state-of-the-art and custom architectures.",
+      "image": "assets/projects/VehiclesDamagesDetection.png",
+      "url": "https://github.com/MrCharlesSG/Vehicles-Damages-Detection"
+    },
+    {
+      "title": "Cryptographic Chat",
+      "stack": ["Cryptography", "Python", "Flask"],
+      "description": "This project addresses the need for a secure, end-to-end system where only users involved in a conversation can access the content of their chats. Neither the server nor potential attackers can decipher the communication. The objective is to uphold the five pillars of CIANA, as defined by NIST: Confidentiality, Integrity, Availability, Authentication, and Non-repudiation.",
+      "image": "assets/projects/CryptographicChat.png",
+      "url": "https://github.com/MrCharlesSG/CryptographicChat"
+    },
+    {
       "title": "Ecommerce App",
       "stack": ["Android", "Kotlin", "Firebase"],
-      "description": "Final project of the subject of Application Development for Mobile Devices of the Software Engineering degree at Algebra University College (Zagreb). The project is an e-commerce app.",
+      "description": "This e-commerce app is built in Kotlin, allowing users to log in, create a wishlist, and browse products fetched from a public API. The backend database is managed using Firebase.",
       "image": "assets/projects/EcommerceApp.png",
       "url": "https://github.com/MrCharlesSG/EcommerceAndroid"
     },
+    
     {
-      "title": "Unioversitary Events",
-      "stack": ["Express.js", "HTML", "Bootstrap"],
-      "description": "",
-      "image": "assets/projects/EventosUniv.png",
-      "url": "https://github.com/MrCharlesSG/EventosUniversitariosAW"
+      "title": "Algoritmic Techniques",
+      "stack": ["C++", "Algorithms", "Data Structures"],
+      "description": "A collection of algorithms covering various paradigms, including graph algorithms (Kruskal, Dijkstra), greedy methods, dynamic programming, backtracking, and divide-and-conquer techniques.",
+      "image": "assets/projects/Algorithms.png",
+      "url": "https://github.com/MrCharlesSG/Algorithmic-Techniques"
+    },
+    {
+      "title": "DevOps Notes",
+      "stack": ["Kubernetes", "Docker"],
+      "description": "A collection of notes and resources for DevOps exam preparation, covering Kubernetes, Docker, and application deployment. Includes detailed labs, troubleshooting tips, and practical insights to strengthen understanding of containerization and Kubernetes management.",
+      "image": "assets/projects/DevOps-notes.png",
+      "url": "https://github.com/MrCharlesSG/DevOps-Notes"
     }
   ],
-"about": {
-  "name": "Carlos Serrano Gutiérrez",
-  "title": "Software Engineer with a Cybersecurity Mindset",
-  "description": "I'm a software engineer passionate about building robust and scalable solutions, always keeping security in mind. I thrive on creating software that is not only functional but also resilient. With an open-minded and disciplined approach, I continuously seek to improve, adapt, and make better decisions—bridging the gap between technology and real-world applications.",
-  "image": "assets/img/personal-foto.jpeg"
-},
-
-"home": {
-  "name": "Carlos<br>Serrano Gutiérrez",
-  "subtitle": "Driven by <em class='text-primary-light'>software engineering</em>, <em class='text-primary-light'>problem-solving</em>, and a commitment to continuous growth and <em class='text-primary-light'>discipline</em>.",
-  "resume": "/assets/CV_Carlos_Serrano_Gutierrez.pdf"
-}
-,
   "education": [
     {
       "period": "2021 - 2023",
@@ -85,6 +87,19 @@
     "author": "Ray Dalio",
     "image": "assets/img/quote.jpg"
   },
+  "about": {
+    "name": "Carlos Serrano Gutiérrez",
+    "title": "Software Engineer with a Cybersecurity Mindset",
+    "description": "I'm a software engineer passionate about building robust and scalable solutions, always keeping security in mind. I thrive on creating software that is not only functional but also resilient. With an open-minded and disciplined approach, I continuously seek to improve, adapt, and make better decisions—bridging the gap between technology and real-world applications.",
+    "image": "assets/img/personal-foto.jpeg"
+  },
+
+  "home": {
+    "name": "Carlos<br>Serrano Gutiérrez",
+    "subtitle": "Driven by <em class='text-primary-light'>software engineering</em>, <em class='text-primary-light'>problem-solving</em>, and a commitment to continuous growth and <em class='text-primary-light'>discipline</em>.",
+    "resume": "/assets/CV_Carlos_Serrano_Gutierrez.pdf"
+  }
+  ,
   "certifications": [
     {
       "title": "Cambridge Advanced Certificate (CAE)",

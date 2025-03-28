@@ -90,13 +90,13 @@
   "about": {
     "name": "Carlos Serrano Gutiérrez",
     "title": "Software Engineer with a Cybersecurity Mindset",
-    "description": "I'm a software engineer passionate about building robust and scalable solutions, always keeping security in mind. I thrive on creating software that is not only functional but also resilient. With an open-minded and disciplined approach, I continuously seek to improve, adapt, and make better decisions—bridging the gap between technology and real-world applications.",
+    "description": "I'm a software engineer passionate about building secure, scalable solutions with a strong interest in business and software developmen. I love creating software that is not only functional but also resilient. With  a radical open-minded and disciplined approach, I continuously seek to improve, adapt, and make better decisions, bridging the gap between technology, business needs, and real-world applications.",
     "image": "assets/img/personal-foto.jpeg"
   },
 
   "home": {
     "name": "Carlos<br>Serrano Gutiérrez",
-    "subtitle": "Driven by <em class='text-primary-light'>software engineering</em>, <em class='text-primary-light'>problem-solving</em>, and a commitment to continuous growth and <em class='text-primary-light'>discipline</em>.",
+    "subtitle": "Passionate about <em class='text-primary-light'>developing secure solutions</em>, and committed to continuous growth with <em class='text-primary-light'>discipline</em>.",
     "resume": "/assets/CV_Carlos_Serrano_Gutierrez.pdf"
   }
   ,

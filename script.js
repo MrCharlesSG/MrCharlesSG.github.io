@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <img src="${project.image}" alt="${project.title}" class="project-image">
                     <div class="project-info">
                         <h3 class="project-title">${project.title}</h3>
-                        <div class="project-tags">${project.stack.map(tag => `<span class="project-category">${tag}</span>`).join(" ")}</div>
+                        <div class="project-tags flex justify-content-center">${project.stack.map(tag => `<span class="project-category">${tag}</span>`).join(" ")}</div>
                         <p class="project-description">${project.description}</p>
                         <a href="${project.url}" class="project-link" target="_blank" rel="noopener noreferrer">Github</a>
                     </div>

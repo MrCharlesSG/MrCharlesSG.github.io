@@ -96,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Projects Section
         const projectsWrapper = document.querySelector(".projects-wrapper");
         const loadMoreButton = document.getElementById("load-more");
-        let visibleProjects = 4;
 
+        // Función para renderizar todos los proyectos
         function renderProjects() {
-            projectsWrapper.innerHTML = data.projects.slice(0, visibleProjects).map(project => `
-                <div class="project-card">
+            projectsWrapper.innerHTML = data.projects.map(project => `
+                <div class="project-card project-hidden">
                     <img src="${project.image}" alt="${project.title}" class="project-image">
                     <div class="project-info">
                         <h3 class="project-title">${project.title}</h3>
@@ -111,14 +111,33 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `).join('');
         }
-        
+
         renderProjects();
-        loadMoreButton.addEventListener("click", () => {
-            visibleProjects = Math.min(visibleProjects + 4, data.projects.length);
-            renderProjects();
+
+        // Función para mostrar los proyectos ocultos
+        let visibleProjects = 4; // Proyectos iniciales visibles
+
+        function showMoreProjects() {
+            const hiddenProjects = document.querySelectorAll('.project-hidden');
+            for (let i = 0; i < visibleProjects; i++) {
+                if (hiddenProjects[i]) {
+                    hiddenProjects[i].classList.remove('project-hidden');
+                }
+            }
+
             if (visibleProjects >= data.projects.length) {
                 loadMoreButton.style.display = "none";
+            } else {
+                visibleProjects = Math.min(visibleProjects + 4, data.projects.length);
             }
+        }
+
+        // Mostrar los primeros proyectos al cargar
+        showMoreProjects();
+
+        // Evento del botón "See More"
+        loadMoreButton.addEventListener("click", () => {
+            showMoreProjects();
         });
     
 

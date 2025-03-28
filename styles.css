@@ -60,6 +60,9 @@ body {
     background-color: var(--dark-navy) !important;
 }
 
+.project-hidden {
+    display: none !important;
+}
 
 
 

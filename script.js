@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", () => {
         let current = "";
-        navbar.classList.toggle("scrolled", window.scrollY > 50);
+        navbar.classList.toggle("scrolled", window.scrollY > 100);
         
         sections.forEach(section => {
             if (window.scrollY >= section.offsetTop - 60) {
@@ -48,9 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(data => {
         // Home Content
         document.getElementById('home-content').innerHTML = `
-            <h1 class="mb-4 title">${data.home.name}</h1>
+            <h1 class="mb-4 title text-center w-100">${data.home.name}</h1>
+            
+            <div class="container col-lg-8 col-10">
             <h4 class="mb-4">${data.home.subtitle}</h4>
             <a href="${data.home.resume}" download class="btn btn-primary btn-lg">Download Resume</a>
+            </div>
         `;
         
         // About Me Section

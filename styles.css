@@ -1,13 +1,13 @@
 :root {
     --dark-navy: #242a35; 
     --darker-navy: rgb(21, 23, 28); 
-    --bg-light:#f8f9fa;
-    --primary:#e53889;
-    --primary-dark:#AC1754;
+    --bg-light:hsl(210, 17%, 98%);
+    --primary:#FA7921;
+    --primary-dark:#0B4F6C;
     --dark-navy-trasparent: rgba(36, 42, 53, 0.7);
     --dark-navy-little-trasparent: rgba(36, 42, 53, 0.2);
     --dark-navy-big-trasparent: rgba(36, 42, 53, 0.8);
-    --primary-trasparent: rgba(229, 56, 137, 0.4);
+    --primary-trasparent: rgba(250, 121, 33, 0.4);
 }
 /*
 rgb(0, 210, 242)
@@ -339,8 +339,8 @@ p {
 
 /* Projects Section */
 #projects {
-    background: rgb(109,38,71);
-background: radial-gradient(circle, rgba(109,38,71,1) 2%, rgba(36,42,53,1) 91%);
+    background: var(--primary);
+background: radial-gradient(circle, rgba(7 55 75) 2%, rgba(36,42,53,1) 91%);
     color: var(--bg-light);
     padding: 4rem 0;
     overflow: hidden;

@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
         particlesJS(containerId, {
             particles: {
                 number: { value: 100, density: { enable: true, value_area: 800 } },
-                color: { value: "#e53889" },
+                color: { value: "#FA7921" },
                 shape: { type: "circle" },
                 opacity: { value: 0.5 },
                 size: { value: 7, random: true },
-                line_linked: { enable: true, distance: 150, color: "#e53889", opacity: 0.4, width: 1 },
+                line_linked: { enable: true, distance: 150, color: "#FA7921", opacity: 0.4, width: 1 },
                 move: { enable: true, speed: 6 }
             },
             interactivity: {

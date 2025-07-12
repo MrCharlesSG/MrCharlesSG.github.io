@@ -69,9 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="timeline-item list-unstyled">
 
           <div class="timeline-content">
-            <h5 class="dark-text">${item.period}</h5>
-                        <h6 class="text-secondary">${item.title}</h6>
-                        <p class="text-primary">${item.institution}</p>
+            <h5 class="dark-text">${item.title}</h5>
+                        <h6 class="text-secondary">${item.institution}</h6>
+                        <p class="text-primary">${item.period}</p>
           </div>
         </li>
       `;
@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="timeline-item list-unstyled">
 
           <div class="timeline-content">
-                        <h5 class="dark-text">${item.period}</h5>
-                        <h6 class="text-secondary">${item.title}</h6>
-                        <p class="text-primary">${item.company}</p>
+                        <h5 class="dark-text">${item.title}</h5>
+                        <h6 class="text-secondary">${item.company}</h6>
+                        <p class="text-primary">${item.period}</p>
           </div>
         </li>
       `;

@@ -61,7 +61,7 @@
   ],
   "education": [
     {
-      "period": "2021 - 2023",
+      "period": "2024 - 2025",
       "title": "Software Engineering",
       "institution": "Complutense University of Madrid, Spain"
     },
@@ -71,21 +71,21 @@
       "institution": "Algebra University of Zagreb, Croatia"
     },
     {
-      "period": "2024 - 2025",
+      "period": "2021 - 2023",
       "title": "Software Engineering",
       "institution": "Complutense University of Madrid, Spain"
     }
   ],
   "experience": [
     {
+      "period": "jul 2025 - Today",
+      "title": "Software Engineer I",
+      "company": "Cabify, Madrid, Spain"
+    },
+    {
       "period": "jan 2025 - jun 2025",
       "title": "Cybersecurity Advisory Intern",
       "company": "PricewaterhouseCoopers, Madrid, Spain"
-    },
-     {
-      "period": "jul 2025 - Today",
-      "title": "Software Engineer",
-      "company": "Cabify, Madrid, Spain"
     }
   ],
   "quote": {
@@ -96,7 +96,7 @@
   "about": {
     "name": "Carlos Serrano Gutiérrez",
     "title": "Software Engineer with a Cybersecurity Mindset",
-    "description": "I'm a software engineer passionate about building secure, scalable solutions with a strong interest in business and software developmen. I love creating software that is not only functional but also resilient. With  a radical open-minded and disciplined approach, I continuously seek to improve, adapt, and make better decisions, bridging the gap between technology, business needs, and real-world applications.",
+    "description": "I'm a software engineer passionate about building secure, scalable solutions with a strong interest in business and software development. I love creating software that is not only functional but also resilient. With  a radical open-minded and disciplined approach, I continuously seek to improve, adapt, and make better decisions, bridging the gap between technology, business needs, and real-world applications.",
     "image": "assets/img/personal-foto.jpeg"
   },
 
